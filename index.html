@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+
+    <link rel="manifest" href="./manifest.json" />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To do list, Application progressif.</title>
+    <link rel="stylesheet" href="./src/style/style.css" />
+    <link rel="stylesheet" href="./src/bootstrap/css/bootstrap.min.css" />
+  </head>
+  <body>
+   
+    <div
+      class="d-flex vh-100 bg-primary justify-content-center align-items-center colonne"
+    >
+    <h1>Fine Itech</h1>
+      <div class="w-50 bg-white rounded p-3">
+        <form  id="form" class="form-inline">
+          <input
+            class="form-control mr-sm-2"
+            type="text"
+            required
+            autocomplete="off"
+            placeholder="Entrer votre liste de choses à faire..."
+            id="recuperer"/>
+
+          <input class="btn btn-outline-success my-2 my-sm-0" id="bouttonAjouter" value="Ajouter" type="submit">
+        </form>
+
+        <div id="vide"  class="text-center">
+            Désolez, vous n'avez pas de tache en cour...
+        </div>
+
+
+        <div id="listes">
+          <ol id="ol" class="list-group list-group-numbered ">
+            <!-- <li class="list-group-item list-group-item list-group-item-action"></li> -->
+           
+          </ol>
+        </div>
+      </div>
+    </div>
+
+    <script src="./src/js/main.js"></script>
+    <script src="./src/bootstrap/js/bootstrap.min.js"></script>
+  </body>
+</html>

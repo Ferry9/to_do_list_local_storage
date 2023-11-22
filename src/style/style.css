@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: roboto;
+}
+
+
+form{
+    display: flex;
+    gap: 20px;
+    padding-bottom: 5%;
+    height: 150px;
+}
+
+.listes{
+    padding-top: 5%;
+}
+
+h1{
+    color: #fff;
+}
+.colonne{
+    display: flex;
+    flex-direction: column;
+}
+
+
+li {
+    font-style: italic;
+    font-size: 1.2em;
+  }
+
+  #listes{
+    height: 200px;
+    white-space: nowrap;
+    overflow-x: auto;
+  }
+
+
+
+  /* Css prit sur css strick.comm  custom list style */
+
+  ol {
+    list-style: none;
+    counter-reset: my-awesome-counter;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+  }
+li {
+    counter-increment: my-awesome-counter;
+    display: flex;
+    width: 50%;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+  }
+  li::before {
+    content: "0" counter(my-awesome-counter);
+    
+    font-size: 2rem;
+    margin-right: 1rem;
+    font-family: 'Abril Fatface', serif;
+    line-height: 2;
+  }
+
+  li{
+    font-size: 1em;
+  }
+   
+
+
+  /* 
+  Média queries */
+
+
+  @media screen and (min-width: 355px) and (max-width: 430px) {
+    .recuperer, .bouttonAjouter{
+        font-size: 1rem;
+
+    }
+
+    #vide {
+        font-size: 12px;
+        padding-bottom: 30px;
+    }
+
+    li::before {
+        content: "0" counter(my-awesome-counter);
+        
+        font-size: 0.7rem;
+        margin-right: 1rem;
+        font-family: 'Abril Fatface', serif;
+    
+      }
+
+  }
+  
